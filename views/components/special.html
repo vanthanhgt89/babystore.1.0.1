@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row " id="special-product">
+    <div class="box-title">
+      <div class="title">
+        <span class="title-text">Sản phẩm bán chạy</span>
+      </div>
+    </div>
+
+    <ul class="nav nav-pills">
+      <li class="active" data-name='item1'><a data-toggle="pill" href="#item1">Toàn bộ sản phẩm</a></li>
+      {% for item in category%}
+      <li class="productItem" data-name='item{{loop.index + 1}}'><a data-toggle="pill" href="#item{{loop.index + 1}}">{{item.name}}</a></li>
+      {% endfor%}
+
+    </ul>
+
+    <div class="tab-content tab1">
+      <div id="item1" class="tab-pane fade in active">
+        <div class="row">
+          {% for item in generalProduct%}
+          <div class="col-xs-6 col-sm-2 col-md-2">
+            <div class="container-item">
+              <img src="/image/img/{{item.url}}" alt="item.name" class="img-responsive">
+              <a href="chi-tiet-san-pham" class="name"> {{item.name}}</a>
+              <div class="price">
+                <a href="detail-product">
+                  <ins>{{item.sale/100 * item.price}}</ins>
+                </a>
+                <a href="detail-product">
+                  <del>{{item.price}}</del>
+                </a>
+              </div>
+              <div class="icon">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+
+          {% endfor %}
+        </div>
+      </div>
+
+
+      <div id="item2" class="tab-pane fade ">
+      </div>
+      <div id="item3" class="tab-pane fade ">
+      </div>
+      <div id="item4" class="tab-pane fade ">
+      </div>
+      <div id="item5" class="tab-pane fade ">
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>

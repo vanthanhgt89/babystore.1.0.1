@@ -1,0 +1,145 @@
+footer {
+    margin: 50px auto 0;
+    background: rgba(238, 238, 238, 0.5);
+}
+
+.request-email {
+    height: 300px;
+    background: url('/image/banner/home-footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.title {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.title h1 {
+    text-transform: capitalize;
+    color: white;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.list>li {
+    font-size: 0.8em;
+}
+
+.list>li {
+    transform: translateX(0px);
+    transition: all 0.3s linear;
+}
+
+.list>li:hover {
+    transform: translateX(10px);
+    color: orange;
+}
+
+#comment {
+    width: 40%;
+    padding: 10px;
+}
+
+.btn-submit {
+    display: inline-block;
+    padding: 8px;
+    background: #155b98;
+    color:white;
+}
+
+.icon-footer {
+    margin-top: 10px;
+    text-indent: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-footer .fa::before {
+    display: block;
+    font-size: 2.5em;
+}
+
+@media (min-width: 1px) {
+    #comment {
+        font-size: 0.8em;
+        width: 40%;
+    }
+    .btn-submit {
+        font-size: 0.8em;
+    }
+    .title-footer {
+        font-size: 0.8em;
+        border-bottom: 1px solid orange;
+    }
+    .title>h1 {
+        font-size: 1.4em;
+    }
+    .icon-footer .fa::before {
+        display: block;
+        font-size: 1.6em;
+    }
+}
+
+@media (min-width: 768px) {
+    #comment {
+        width: 30%;
+        font-size: 0.8em;
+    }
+    
+    .icon-footer .fa::before {
+        display: block;
+        /* font-size: 2em; */
+    }
+    .title>h1 {
+        font-size: 2em;
+    }
+    .title-footer {
+        font-size: 0.8em;
+        font-weight: bold;
+        border-bottom: 1px solid orange;
+    }
+}
+
+.fa-facebook-official,
+.fa-google-plus-official,
+.fa-twitter-square,
+.fa-youtube-play {
+    color: white;
+}
+
+.fa-facebook-official:hover {
+    color: #3B5998;
+}
+
+.fa-google-plus-official:hover {
+    color: #CA3725;
+}
+
+.fa-twitter-square:hover {
+    color: #1EA1F3;
+}
+
+.fa-youtube-play:hover {
+    color: #E72B20;
+}
+
+.footer {
+    margin: 50px auto 0;
+}
+
+.list-item {
+    text-align: left;
+}
+
+.back-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    display: none;
+}
+

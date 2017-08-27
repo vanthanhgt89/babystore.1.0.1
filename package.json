@@ -1,0 +1,33 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node test3"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.5",
+    "jquery": "^3.2.1",
+    "memory-cache": "^0.2.0",
+    "node-cache": "^4.1.1",
+    "nunjucks": "^3.0.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg-promise": "^6.3.7",
+    "promise-redis": "0.0.5",
+    "redis": "^2.8.0",
+    "redis-server": "^1.1.0",
+    "response-time": "^2.3.2"
+  }
+}

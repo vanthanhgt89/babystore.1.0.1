@@ -1,0 +1,645 @@
+.menu__info {
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    background-color:#F08113;
+  }
+
+  .menu__info--item1 {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: white;
+  }
+
+  .menu__info--item1 > span:first-child {
+    margin-right: 10px;
+  }
+
+  @media (min-width: 1px) {
+    .menu__info--item1{
+      display: none;
+    }
+  }
+   @media (min-width: 375px) {
+    .menu__info--item1{
+      display: inline-block;
+    }
+     .menu__info--item1 > span:last-child {
+    display: none;
+  }
+  }
+
+  @media (min-width: 768px) {
+    .menu__info--item1 > span:last-child {
+      display: inline-block;
+    }
+  }
+
+  .menu__info--item2 {
+    height: 30px;
+    color: white;
+  }
+
+    @media (min-width: 1px) {
+    .menu__info--item2{
+      width: 100%;
+    }
+  }
+    @media (min-width: 375px) {
+    .menu__info--item2{
+      width: 58% ;
+    }
+  }
+    @media (min-width: 768px) {
+    .menu__info--item2{
+      width: 50% ;
+    }
+  }
+
+  .sign-in, .register{
+    float: right;
+    line-height: 30px;
+  }
+  .register{
+    margin-left:15px;
+  }
+
+
+  /*=== form register ===*/
+  .user-modal {
+    width: 300px;
+    margin: auto;
+    text-align: left;
+  }
+  .myForm{
+    border: none;
+    border-radius: 0;
+  }
+  @media (min-width: 768px) {
+    .user-modal {
+      width: 350px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .user-modal {
+      width: 400px;
+    }
+  }
+
+  #myModal {
+    transform: translateY(50px);
+    box-shadow: none;
+  }
+
+  #myModal > div > ul {
+    border: none;
+  }
+
+  #myModal > div > ul > li {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: #666666;
+  }
+
+  #myModal > div > ul > li > a {
+    border: none;
+    border-radius: 0;
+    color: black;
+    margin: 0;
+  }
+
+  #email, #password {
+    background: #FAFFBD;
+  }
+
+  .menu-login > li {
+    width: 50%;
+  }
+
+  .login {
+    float: right;
+  }
+  .btn-login:focus{
+    outline: none;
+  }
+  .btn-login{
+    background: none;
+    border: none;
+  }
+
+ 
+
+  .login-item {
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+
+  .login-item:hover {
+    background: white;
+  }
+
+  #login > div > div.modal-body > form > div > label{
+    float: left;
+  }
+
+  .get-sign {
+    width: 100%;
+  }
+
+  .text-color {
+    color: #00695C;
+    display: block;
+    text-align: left;
+  }
+
+  .remember {
+    margin: 10px 0;
+  }
+  
+  #login-icon.fa-google,
+  #login-icon.fa-facebook-official {
+    color: white;
+    font-size: 2em;
+  }
+
+  #login-icon {
+    justify-content: center;
+  }
+
+  .login-face {
+    display: block;
+    float: left;
+    background: #3B5998;
+    width: 48%;
+    margin-right: 3%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .login-gmail {
+    display: block;
+    float: left;
+    background: #B94937;
+    border-radius: 4px;
+    width: 48%;
+
+  }
+
+  /*===============Menu nav ============*/
+  /*=======Menu Desktop =====*/
+  .nav-sm {
+    display: block;
+    border:none;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 425px) {
+    .nav-sm {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) {
+    .nav-sm {
+      margin-bottom: 0;
+    }
+  }
+
+ 
+
+  .logo > a > img {
+    display: inline-block;
+    width: 75%;
+    float: right;
+  }
+  @media (min-width: 768px){
+    .logo > a > img {
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px){
+    .logo > a > img {
+      width: 93%;
+    }
+  }
+  @media (min-width: 1200px){
+    .logo > a > img {
+      width: 61%;
+    }
+  }
+  .menu {
+    height: 65px;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: 992px){
+    .menu{
+      overflow: visible;
+    }
+  }
+
+  .menu--item {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+  }
+  @media (min-width: 768px){
+    .menu--item{
+      margin-top:15px;
+    }
+  }
+  @media (min-width: 992px){
+    .menu--item{
+      margin-top:13px;
+    }
+  }
+  @media (min-width: 1170px){
+    .menu--item{
+      margin-top:0px;
+    }
+  }
+
+  .list {
+    float: left;
+    line-height: 65px;
+    width: 12%;
+    text-align: center;
+  }
+  .list >a{
+    color:white;
+  }
+  .item1{
+    /* width: 12%; */
+    height: 65px;
+    position: relative;
+    z-index: 1;
+    background-image: url('../image/bgMenu/m1bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 768px){
+    .item1{
+      background-size: contain;
+    }
+  }
+  @media (min-width: 992px){
+    .item1{
+      background-size: cover;
+
+    }
+  }
+  .item2{
+    position: relative;
+    left: -10px;
+    z-index: 2;
+    background-image: url('../image/bgMenu/m2bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 768px){
+    .item2{
+      left: -7px;
+      background-size: contain;
+    }
+  }
+  @media (min-width: 992px){
+    .item2{
+      left: -10px;
+      background-size: cover;
+
+    }
+  }
+  .item3{
+    position: relative;
+    left: -20px;
+    z-index: 3;
+    background-image: url('../image/bgMenu/m3bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 768px){
+    .item3{
+      left: -15px;
+      background-size: contain;
+    }
+  }
+  @media (min-width: 992px){
+    .item3{
+      left: -15px;
+      background-size: cover;
+
+    }
+  }
+
+   .product-menu{
+    position: absolute;
+    top: 65px;
+    left: -500px;
+    height: 275px;
+    background: white;
+    transform: translateY(15px);
+    transition: all 0.3s linear;
+    opacity:0;
+  }
+  @media (min-width: 768px) {
+    .product-menu{
+      left: -272px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .product-menu{
+      left: -350px;
+    }
+  }
+  @media (min-width: 1170px) {
+    .product-menu{
+      left: -430px;
+    }
+  }
+
+  .list-item:hover .product-menu{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .product-list >a >img{
+    display: block;
+    width: 50%;
+    height: 80px;
+  }
+
+  .product-list >li{
+    width: 100%;
+    height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  .product-list >li >a{
+    font-size:0.8em!important;
+    line-height: 20px;
+  }
+  .product-list >li >a:hover{
+    color: orange;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .item4{
+    position: relative;
+    left: -30px;
+    z-index: 4;
+    background-image: url('../image/bgMenu/m4bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 768px){
+    .item4{
+      left: -18px;
+      background-size: contain;
+    }
+  }
+  @media (min-width: 992px){
+    .item4{
+      left: -23px;
+      background-size: cover;
+    }
+  }
+  .item5{
+    position: relative;
+    left: -35px;
+    z-index: 5;
+    background-image: url('../image/bgMenu/m5bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 768px){
+    .item5{
+      left: -18px;
+      background-size: contain;
+    }
+  }
+  @media (min-width: 992px){
+    .item5{
+      left: -24px;
+      background-size: cover;
+
+    }
+  }
+  .item6{
+    position: relative;
+    left: -26px;
+    z-index: 5;
+    background-image: url('../image/bgMenu/m6bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 768px){
+    .item6{
+      left: -18px;
+      background-size: contain;
+    }
+  }
+  @media (min-width: 992px){
+    .item6{
+      left: -24px;
+      background-size: contain;
+
+    }
+  }
+  @media (min-width: 1170px){
+    .item6{
+      background-size: cover;
+
+    }
+  }
+
+  .icon-cart{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  @media (min-width: 768px) {
+    .list > a{
+      font-size: 0.6em;
+    }
+    .icon-cart{
+      font-size: 0.8em;
+      top: 10px;
+      right: 0;
+    }
+
+    .icon-cart a>button{
+      padding: 2px ;
+    }
+  }
+  @media (min-width: 992px) {
+    .list >a{
+      font-size: 1em;
+    }
+    .icon-cart{
+      font-size: 1em;
+      top: 20px;
+      right: 7px;
+
+    }
+    .icon-cart a>button{
+      padding: 5px 10px;
+    }  
+  }
+
+ 
+
+ 
+
+  .menu--item .icon-cart {
+    float: right;
+  }
+
+  .icon-cart > a {
+    margin-left: 15px;
+    font-size: 1.2em;
+  }
+ 
+  /*=======Menu Phone =====*/
+  .nav-phone{
+    position:relative;
+    margin-bottom: 0;
+    border: none;
+    z-index: 88;
+  }
+  @media (min-width: 768px) {
+    .nav-phone{
+      display: none;
+    }
+  }
+  .nav-phone >a >img{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    display:block;
+    margin:auto;
+    width:18%;
+  }
+  #menu{
+    float:left;
+    margin-top:3vh;
+    margin-left: 30px;
+    border:none;
+    background: none;
+  }
+  #menu-phone{
+    position: absolute;
+    top:100%;
+    left: 0;
+    width:50%
+  }
+  #menu-phone >ul >li{
+    padding: 5px 10px;
+  }
+
+  .icon-cart-xs{
+    float:right;
+    margin-top:5vh;
+  }
+
+  .icon-cart-xs >a{
+    margin-right: 10px;
+  }
+
+  .list-xs{
+    text-align: left;
+    font-weight: bold;
+    background: white;
+    text-transform: capitalize;
+  }
+  .btn-danger{
+    position: relative;
+  }
+  .btn-danger >a {
+    color: white;
+  }
+  
+
+  .btn-info{
+    position: relative;
+  }
+
+   
+
+  /* div{ Ve tam giac
+    width:0;
+    height:0;
+    border:4px solid transparent;
+    border-top:none;
+    border-bottom:4px solid black;
+    } */
+
+    .logged{
+      width: 30%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      /* display: none; */
+    }
+    @media (min-width: 1px){
+      .logged{
+        right: 88px;
+      }
+    }
+      @media (min-width: 768px){
+      .logged{
+        right: 50px;
+      }
+    }
+    @media (min-width: 992px){
+      .logged{
+        right: 33px;
+      }
+    }
+    .avarta-s{
+      border-radius: 50%;
+    }
+    .dropdown-toggle{
+      background: none;
+      color: white;
+      border:none;
+    }
+    .dropdown-text{
+      color: black;
+      padding: 5px 10px;
+    }
+
+    .sign-out, .user-info{
+      cursor: pointer;
+    }
+
+
+    .wssignup-w{
+      display: none;
+    }
+    .wsregister-w{
+      display: none;
+    }
+

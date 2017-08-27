@@ -1,0 +1,56 @@
+<!-- Baby product -->
+{% for item in listProduct%}
+
+<div class="container">
+
+    <div class="row">
+        <div class="product-title">
+            <div class="title-left">
+                <span class="">{{item.name}}</span>
+            </div>
+            <div class="title-right">
+                <a href="san-pham">Toàn bộ sản phẩm  <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-* col-sm-5 col-md-5">
+
+            <div class="product-item-l">
+                <a href="san-pham"> <img src="/image/img/{{item.url}}" alt="poster" class="img-responsive"></a>
+
+            </div>
+        </div>
+
+
+        <div class="col-xs-* col-sm-7 col-md-7">
+            {% for item1 in item.list_product %}
+            <div class="col-xs-* col-sm-4 col-md-4">
+                <div class="product-item-s">
+                    <a href="detail-san-pham"><img src="/image/img/{{item1.image}}" class="img-responsive img-item" alt=""></a>
+                    <div class="description">
+                        <span class="name"> {{item1.name}}</span>
+                        <div class="price">
+                            <ins>{{item1.price}}</ins>
+                            <del>{{item1.sale}}</del>
+                        </div>
+                        <!-- <div class="cart-s">
+                            <button class="btn btn-info btn-cart">Yêu thích <i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button class="btn btn-danger btn-cart" data-toggle="modal" data-target="#quickbuy">Mua hàng <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                        </div> -->
+
+                    </div>
+                </div>
+
+            </div>
+            {% endfor%}
+
+        </div>
+    </div>
+
+
+
+</div>
+{% endfor%}
+<!-- end baby product -->

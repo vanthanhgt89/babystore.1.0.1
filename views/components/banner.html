@@ -1,0 +1,16 @@
+ {%for item in banner%} 
+ {%if item.position === 'top' %}
+<div class="container-fluid banner" style="background-image: url('/image/banner/{{item.url}}')">
+  {% endif%}
+  {% endfor%}
+  <div id="introduce">
+  </div>
+  <div id='shop'>
+    <div class="shop-button">
+      <a href="product" class="shop">Xem chi tiết</a>
+    </div>
+  </div>
+  <div id="go-down">
+    <a href="#" id="go-about"></a>
+  </div>
+</div>

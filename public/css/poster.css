@@ -1,0 +1,26 @@
+@media (min-width: 1px) {
+    .post > img {
+      display: none;
+    }
+  }
+ @media (min-width: 768px) {
+    .post > img {
+      display: block;
+      height: 159px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .post > img {
+      height: 208px;
+    }
+  }
+
+  @media (min-width: 1170px) {
+    .post > img {
+      height: 246px;;
+    }
+  }
+  .container .row{
+    margin:20px 0;
+  }
