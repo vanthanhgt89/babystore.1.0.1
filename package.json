@@ -28,6 +28,9 @@
     "promise-redis": "0.0.5",
     "redis": "^2.8.0",
     "redis-server": "^1.1.0",
-    "response-time": "^2.3.2"
+    "response-time": "^2.3.2",
+    "short-id": "0.1.0-1",
+    "shortid": "^2.2.8",
+    "speakingurl": "^14.0.1"
   }
 }

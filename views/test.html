@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     {% for item in product %}
+                <div class="col-xs-* col-sm-4 col-md-4">
+                    <div class="box-item">
+                        <div id="carousel-{{item.id}}" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                {% for item1 in item.images %}
+                                 {% if loop.index == 1 %} 
+                                <li data-target="#carousel-{{item.id}}" data-slide-to="{{loop.index - 1 }}" class="active"></li>
+                                 {% else %} 
+                                <li data-target="#carousel-{{item.id}}" data-slide-to="{{loop.index - 1 }}"></li>
+                                 {% endif %} 
+                                {% endfor %}
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                {% for item1 in item.images %}
+                                <!-- <span>{{item1.url}}</span> -->
+                                 {% if loop.index == 1 %} 
+                                <div class="item active">
+                                    <a href=""><img src="/image/img/{{item1.url}}" alt="..."></a>
+
+                                </div>
+                                 {% else %} 
+                                <div class="item" >
+                                    <a href=""><img src="/image/img/{{item1.url}}" alt="item.name"></a>
+                                </div>
+                                 {% endif %} 
+                                {% endfor %}
+                            </div>
+
+                        </div>
+                         <div class="description">
+                            <div class="name">
+                                <span> {{item.name}}</span>
+                            </div>
+                            <div class="price">
+                                <ins>{{item.sale}}đ</ins>
+                                <del>{{item.price}}đ</del>
+                            </div>
+
+                         </div>
+
+                          <div class="cart-l">
+                            <button class="btn btn-info btn-l">Yêu thích <i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            <button class="btn btn-danger btn-l" data-toggle="modal" data-target="#quickbuy">Mua hàng <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                        </div>  
+                    </div>
+                </div>
+                {% endfor %}
+</body>
+</html>

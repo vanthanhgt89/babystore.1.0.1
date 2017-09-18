@@ -1,0 +1,203 @@
+#product {
+  width: 55%;
+  font-family: "Courgette", cursive;
+  font-size: 2em;
+  color: white;
+  text-transform: capitalize;
+  margin: auto;
+}
+
+@media (min-width: 425px) {
+  #product {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 768px) {
+  #product {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 992px) {
+  #product {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1170px) {
+  #product {
+    font-size: 2em;
+  }
+}
+
+.content {
+  margin: 10px auto;
+  font-family: 'Robonto', Arial, sans-serif;
+  text-align: left;
+}
+
+.p-title {
+  height: 30px;
+}
+
+#search {
+  width: 83%;
+  height: 30px;
+  font-size: 0.8em;
+  border: 1px solid #204d74;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#searchform>button {
+  width: 13%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #204d74;
+  background: rgba(252, 248, 227, 0.89);
+  outline: none;
+}
+
+.text-box {
+  height: 30px;
+  background: none;
+  color: black;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary {
+  background: none;
+  color: black;
+}
+
+.category {
+  height: 30px;
+  padding: 0 5px;
+  background: #F08113;
+  color: white;
+  font-size: 1.1em;
+  line-height: 30px;
+}
+
+.list-catalogues {
+  border: 1px solid rgba(85, 85, 85, 0.18);
+}
+
+.dropdown-category {
+  width: 100%;
+}
+
+.dropdown-category-2 {
+  width: 70%;
+}
+
+.list-1,
+.list-2,
+.list-3,
+.list-4 {
+  padding: 10px;
+  list-style-position: inside;
+  font-size: 0.8em;
+}
+
+.list-1,
+.list-2,
+.list-3 {
+  border-bottom: 1px solid lightblue;
+}
+
+.list-1>ul>li,
+.list-2 ul>li,
+.list-3 ul>li,
+.list-4 ul>li {
+  padding: 5px;
+}
+
+.next-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1px) {
+  .category {
+    display: none;
+  }
+  .sort {
+    display: none;
+  }
+  .category-xs {
+    display: block;
+  }
+  .list-catalogues {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .category {
+    display: block;
+    font-size: 0.8em;
+  }
+  .category-xs {
+    display: none;
+  }
+  .sort {
+    display: block;
+  }
+  .list-catalogues {
+    display: block;
+  }
+  .dropdown>button {
+    font-size: 0.5em;
+  }
+  .list-1,
+  .list-2,
+  .list-3,
+  .list-4 {
+    font-size: 0.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  .category {
+    font-size: 1.1em;
+  }
+  .dropdown>button {
+    font-size: 0.8em;
+  }
+  .list-1,
+  .list-2,
+  .list-3,
+  .list-4 {
+    font-size: 0.8em;
+  }
+}
+
+.box-item {
+  margin: 20px 0;
+  border: 1px solid rgba(85, 85, 85, 0.18);
+  position: relative;
+  overflow: hidden;
+}
+.cart-l{
+  position: absolute;
+  bottom: 0;
+  width: 100%;  
+  transform: translateY(30px);
+  opacity: 0; 
+  transition: all 0.3s linear;
+}
+.btn-l{
+  margin: 0 1%;
+  width: 47%;
+}
+.box-item:hover .cart-l {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}

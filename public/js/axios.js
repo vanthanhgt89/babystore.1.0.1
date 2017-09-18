@@ -63,7 +63,7 @@ $(document).ready(() => {
                             console.log(product.length);
                             for(let i = 0; i < product.length; i++) {
                                 // console.log(i);
-                                html += '<div class="col-xs-6 col-sm-2 col-md-2"> <div class="container-item"> <img src="/image/img/'+ product[i].url +'" alt="item.name" class="img-responsive"> <div class="price"> <a href="detail-product"> <ins></ins> </a> <a href="detail-product"> <del> '+ product[i].price +'</del> </a> </div> <div class="icon"> <i class="fa fa-heart-o" aria-hidden="true"></i> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </div> </div> </div>'
+                        html += `<div class="col-xs-6 col-sm-2 col-md-2"> <div class="container-item"> <img src="/image/img/${product[i].url}" alt="item.name" class="img-responsive"> <div class="description" ><div class="name"> <span> ${product[i].name} </span> </div> <div class="price"> <ins>${product[i].sale}đ</ins> <del> ${product[i].price}đ</del> </div> </div><div class="icon"> <i class="fa fa-heart-o" aria-hidden="true"></i> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </div> </div> </div>`
                                 
                             }
                         $('#'+ id).append(html)

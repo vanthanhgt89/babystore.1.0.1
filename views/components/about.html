@@ -1,19 +1,23 @@
 <div class="container">
   <div class="row " id="about">
+      {% for item in display%}
+      {% if item.position == 'about'%}
     <div class="col-xs-* col-sm-6 col-md-6 about-text">
-      <h1 class="about-title text-center">{{about.name}}</h1>
-      <p>{{about.description}}</p>
+      <h1 class="about-title text-center">{{item.name}}</h1>
+      <p>{{item.description}}</p>
       <a href="product">
           <button class="btn btn-primary btn-detail">Xem chi tiết</button>
         </a>
     </div>
     <div class="col-xs-* col-sm-6 col-md-6 about-img">
-      <div class='about-img-large' style="background-image: url(/image/banner/{{about.url}})">
+      <div class='about-img-large' style="background-image: url(/image/banner/{{item.url}})">
         <div class="about-img-item">
 
         </div>
       </div>
     </div>
+    {% endif %}
+    {% endfor %}
 
   </div>
 

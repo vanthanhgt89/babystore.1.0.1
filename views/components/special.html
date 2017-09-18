@@ -21,14 +21,14 @@
           <div class="col-xs-6 col-sm-2 col-md-2">
             <div class="container-item">
               <img src="/image/img/{{item.url}}" alt="item.name" class="img-responsive">
-              <a href="chi-tiet-san-pham" class="name"> {{item.name}}</a>
-              <div class="price">
-                <a href="detail-product">
-                  <ins>{{item.sale/100 * item.price}}</ins>
-                </a>
-                <a href="detail-product">
-                  <del>{{item.price}}</del>
-                </a>
+              <div class="description">
+                <div class="name">
+                  <span> {{item.name}} </span>
+                </div>
+                <div class="price">
+                  <ins>{{item.sale}}đ</ins>
+                  <del>{{item.price}}đ</del>
+                </div>
               </div>
               <div class="icon">
                 <i class="fa fa-heart-o" aria-hidden="true"></i>

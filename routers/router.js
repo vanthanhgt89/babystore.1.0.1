@@ -5,5 +5,8 @@ module.exports = (app, express, passport) => {
     const user = require('./user')(express, passport)
     app.use('/', user)
 
+    const product = require('./product')(express)
+    app.use('/', product)
+
     
 }

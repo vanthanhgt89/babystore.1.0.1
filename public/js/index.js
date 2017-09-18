@@ -14,42 +14,9 @@ $(document).ready(function () {
     $('.shop-button').css('visibility', 'visible')
   });
 
-  $('.container-item1').hover(function () {
-    $('.text-l').typed({
-      strings: ['Bố mẹ đang tìm quần áo cho bé ?'],
-      typeSpeed: 0
-    })
-    $('.typed-cursor').css('display', 'none');
-  })
-
   $('.carousel').carousel({
     interval: false
   })
-
-  function couterHeart() {
-    $('.couter-heart').each(function () {
-      $(this).click(function () {
-        var couter = $('.couter2').html();
-        couter++;
-        $('.couter2').html(couter);
-        $(this).off();
-      })
-    });
-  }
-
-  function couterCart() {
-    $('.couter-cart').each(function () {
-      $(this).click(function () {
-        var couter = $('.couter2').html();
-        couter++;
-        $('.couter1').html(couter);
-        $(this).off();
-      })
-    });
-  }
-  couterHeart();
-  couterCart();
-
 
   $(".back-top").click(function () {
     $('html,body').animate({
@@ -76,19 +43,19 @@ $(document).ready(function () {
 
 
     if (wScroll > 0 && wScroll < 100) {
-      $('#introduce').typed({
+      $('#b-text-1').typed({
         strings: ['Baby store xin chào quý khách </br> bố mẹ muốn mua gì cho con ?'],
         typeSpeed: 0
       })
-      $('#product').typed({
+      $('#b-text-3').typed({
         strings: ['Trang chủ / Sản phẩm</br>Sản phẩm của Babystore '],
         typeSpeed: 0
       })
-      $('#blog').typed({
+      $('#b-text-4').typed({
         strings: ['Trang chủ / Blog</br>'],
         typeSpeed: 0
       })
-      $('#information').typed({
+      $('#b-text-2').typed({
         strings: ['Trang chủ / Giới thiệu </br>Về Babystore '],
         typeSpeed: 0
       })
@@ -99,8 +66,6 @@ $(document).ready(function () {
     } else {
       $('.back-top').fadeOut('slow');
     }
-
-
     let html = $('#about').html();
     if (html) {
 

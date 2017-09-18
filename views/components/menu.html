@@ -13,28 +13,21 @@
             <a href="{{item.url}}">{{item.name}}</a>
           </li>
 
-          {% elif item.id == 3 %}
+          {% elif item.id == 3 and item.id <= 6 %}
           <li class="{{item.style + item.id}}">
               <a href="{{item.url}}">{{item.name}}</a>
               <div class="container product-menu">
-                {%for item in category %}
+                {% for item in category %}
                 <div class="col-sm-3 col-md-3">
                    <div class="product-list">
                       <a href="{{item.url}}"><img src="/image/category/{{item.thumbnail}}" alt=""></a >
                   </div>
                     <ul class="product-list">
                       <li><a href="{{item.url}}"><strong>{{item.name}}</strong></a></li>
-                      {% for sub in sub_category%}
-                        {% if (item.id === sub.category_id) and (sub.category_id === 1) %}
-                        <li><a href="{{item.url}}">{{sub.name}}</a></li>
-                        {% elif (item.id === sub.category_id) and (sub.category_id === 2)%}
-                        <li><a href="{{item.url}}">{{sub.name}}</a></li>
-                        {% elif (item.id === sub.category_id) and (sub.category_id === 3) %}
-                        <li><a href="{{item.url}}">{{sub.name}}</a></li>
-                        {% elif (item.id === sub.category_id) and (sub.category_id === 4) %}
-                        <li><a href="{{item.url}}">{{sub.name}}</a></li>
+                      {% for sub in item.sub_category%}
+                     
+                        <li><a href="{{sub.url}}">{{sub.name}}</a></li>
 
-                        {% endif %} 
                       {% endfor %}
                     </ul>
                 </div>
@@ -51,10 +44,10 @@
           {% endfor %}
           </ul>
           <div class="icon-cart">
-            <a href="cart">
+            <a href="/cart">
                <button class="btn btn-danger">Giỏ hàng  <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
             </a>
-            <a href="favorite"> 
+            <a href="/favorite"> 
               <button class="btn btn-info">Yêu thích <i class="fa fa-heart-o" aria-hidden="true"></i></button>
             </a>
               

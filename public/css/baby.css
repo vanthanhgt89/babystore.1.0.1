@@ -1,4 +1,4 @@
-.row .product-title{
+.row .product-title {
   height: 50px;
   line-height: 50px;
   margin-top: 30px;
@@ -6,7 +6,7 @@
   text-transform: capitalize;
 }
 
-.title-left{
+.title-left {
   background: #F08113;
   float: left;
   text-align: center;
@@ -15,199 +15,195 @@
   padding: 0 15px
 }
 
-
-.title-right{
+.title-right {
   float: right;
-  padding: 0 15px;  
+  padding: 0 15px;
   color: black;
 }
 
-@media (min-width: 1px){
-  .title-right{
+@media (min-width: 1px) {
+  .title-right {
     display: none;
   }
-  .title-left{
+  .title-left {
     width: 70%;
   }
 }
-@media (min-width: 425px){
-  .title-right{
+
+@media (min-width: 425px) {
+  .title-right {
     display: block;
-  padding: 0 15px;  
+    padding: 0 15px;
   }
-   .title-left{
+  .title-left {
     width: 50%;
   }
 }
-@media (min-width: 768px){
-  .title-left{
+
+@media (min-width: 768px) {
+  .title-left {
     width: 30%;
   }
 }
-@media (min-width: 992px){
-  .title-left{
+
+@media (min-width: 992px) {
+  .title-left {
     width: 20%;
   }
 }
 
-.product-item-l{
+.product-item-l {
   border: 1px solid rgba(85, 85, 85, 0.18);
   height: 520px;
-  margin-top: 10px ;
+  margin-top: 10px;
 }
-.product-item-s{
+
+.product-item-s {
   border: 1px solid rgba(85, 85, 85, 0.18);
   height: 250px;
   margin: 10px 0;
+  overflow: hidden;
 }
-.img-item{
+
+.img-item {
   margin: auto;
 }
-.product-item >img{
+
+.product-item>img {
   display: block;
 }
 
-
-.product-item-s >img{
+.product-item-s>img {
   display: block;
 }
 
-@media (min-width: 768px){
-  .product-item-s >img{
-    height:86px;
-  }
-}
-@media (min-width: 992px){
-  .product-item-s >img{
-    height:133px;
-  }
-}
-@media (min-width: 1170px){
-  .product-item-s >img{
-    height:166px;
+@media (min-width: 768px) {
+  .product-item-s>img {
+    height: 86px;
   }
 }
 
+@media (min-width: 992px) {
+  .product-item-s>img {
+    height: 133px;
+  }
+}
 
-.info{
+@media (min-width: 1170px) {
+  .product-item-s>img {
+    height: 166px;
+  }
+}
+
+.info {
   margin: 9px 0;
 }
 
-@media (min-width: 768px){
-  .title{
+@media (min-width: 768px) {
+  .title {
     font-size: 0.5em;
   }
 }
-@media (min-width: 992px){
-  .title{
+
+@media (min-width: 992px) {
+  .title {
     font-size: 0.6em;
   }
 }
-@media (min-width: 1170px){
-  .title{
+
+@media (min-width: 1170px) {
+  .title {
     font-size: 0.8em;
   }
 }
 
-.description{
+.description {
   padding: 0 5px;
 }
-.price{
+
+.name {
+  padding-top: 5px;
+  height: 37px;
+  /* line-height: 37px; */
+}
+
+.price {
   height: 20px;
 }
-.price >ins{
+
+.price>ins {
   display: inline-block;
   width: 50%;
   font-size: 1em;
   color: red;
 }
 
-.price >del{
+.price>del {
   width: 50%;
   font-size: 1em;
   color: black;
-  }
+}
 
-.cart-s{
-  width: 100%;
+.cart-s {
+  /* width: 86%;
   position: absolute;
   bottom: 0;
-  left: 0;
-  transform: translateY(70px);
+  left: 8%; */
+  transform: translateY(50px);
   opacity: 0;
   transition: all 0.5s linear;
 }
-.btn-cart{
+
+.btn-cart {
   width: 100%;
+  padding: 5px 12px;
 }
-.product-item-s:hover .cart-s{
+
+.product-item-s:hover .cart-s {
   opacity: 1;
-  transform: translateY(-5px);
+  transform: translateY(-60px);
 }
 
-
-
-@keyframes run{
-  0% {transform: translateX(0px)}
-  25% {transform: translateX(5px)}
-  50% {transform: translateX(-5px)}
-  75% {transform: translateX(3px)}
-  100% {transform: translateX(0px)}
+@keyframes run1 {
+  0% {
+    transform: translateX(0px)
+  }
+  25% {
+    transform: translateX(5px)
+  }
+  50% {
+    transform: translateX(-5px)
+  }
+  75% {
+    transform: translateX(3px)
+  }
+  100% {
+    transform: translateX(0px)
+  }
 }
-.product-item-s:hover a>img{
- animation: run 1s linear;
+
+.animate-left:hover a>img {
+  animation: run1 1s linear;
 }
 
-.product-item-s:hover .info{
+.animate-left:hover .info {
   visibility: hidden;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-.product-item:hover .cart-s{
-  opacity: 1;
-  transform: translateY(-5px);
+.effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(238, 238, 238, 0.2);
+  transform: rotate(45deg) translate(0, 120%);
+  transition: all 0.3s linear;
 }
-
-
-
-
-
-
-@keyframes run1{
-  0% {transform: translateX(0px)}
-  25% {transform: translateX(5px)}
-  50% {transform: translateX(-5px)}
-  75% {transform: translateX(3px)}
-  100% {transform: translateX(0px)}
+.animate-right:hover a>img {
+  transform: scale(1.05);
+  transition: all 0.3s linear;
 }
-.product-item:hover a>img{
- animation: run1 1s linear;
+.animate-right:hover .effect {
+  transform: rotate(45deg) translate(0, -120%);
 }
-
-
-.product-item:hover .info{
-  visibility: hidden;
-}
-
-

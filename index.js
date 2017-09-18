@@ -30,15 +30,14 @@ app.set('view engine', 'html')
 // ======== config sesstion =========
 app.use(session({
     cookie: {
-        maxAge: (3600 * 1000)
+        maxAge: (3600 * 1000),
+        secure: false
     },
     unser: 'destroy',
     secret: 'cart',
     resave: false,
-    saveUninitialized: true,
-    cookie: {
-        secure: false
-    }
+    saveUninitialized: true
+   
 }));
 
 app.use((req, res, next) => {
@@ -77,4 +76,11 @@ const port = 3001
 
 app.listen(port, () => {
     console.log('Listen 3001');
+})
+
+
+// ======= Handing err ======
+app.use(function (err, req, res, next) {
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
 })

@@ -191,43 +191,43 @@
 
   }
 
-  #introduce {
+  .b-text {
     background:rgba(157, 157, 157, 0.28);
     width: 55%;;
     font-family: "Courgette", cursive;
     font-size: 2em;
     color: white;
     text-transform: capitalize;
-    z-index: -1;
+    /* z-index: -1; */
   }
 
   @media (min-width: 1px) {
-    #introduce {
+    .b-text {
       font-size: 0.6em;
       width: 70%;
     }
   }
    @media (min-width: 425px) {
-    #introduce {
+    .b-text {
       font-size: 0.8em;
       width: 60%;
     }
   }
 
   @media (min-width: 768px) {
-    #introduce {
+    .b-text {
       font-size: 1.2em;
     }
   }
 
   @media (min-width: 992px) {
-    #introduce {
+    .b-text {
       font-size: 2em;
     }
   }
 
   @media (min-width: 1170px) {
-    #introduce {
+    .b-text {
       font-size: 2.5em;
     }
   }
